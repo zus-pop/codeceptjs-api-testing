@@ -7,8 +7,8 @@ setHeadlessWhen(process.env.HEADLESS);
 setCommonPlugins();
 
 export const config: CodeceptJS.MainConfig = {
-  tests: './*_test.ts',
-  output: './output',
+  tests: './test/*_test.ts',
+  output: './test/output',
   helpers: {
     REST: {
       endpoint: 'https://pokeapi.co/api/v2',
