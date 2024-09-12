@@ -1,4 +1,4 @@
-import { PokemonResponse } from "../responseType";
+import { PokemonResponse } from "../responseType.ts";
 import assert from "assert";
 
 Feature("Pokémon API Testing");

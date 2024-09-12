@@ -1,16 +1,23 @@
 {
   "ts-node": {
-    "files": true
+    "files": true,
+    "experimentalSpecifierResolution": "node",
+    "esm": true
   },
   "compilerOptions": {
     "target": "es2018",
     "lib": ["es2018", "DOM"],
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "NodeNext",
     "strictNullChecks": false,
     "types": ["codeceptjs", "node"],
     "declaration": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true
   },
   "exclude": ["node_modules"]
 }
